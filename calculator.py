@@ -15,4 +15,8 @@ elif operation == "/":
     divide = num / num2
     print(divide)
 else:
-    print("idk what do you want to do")
+    fback = input("give me the feedback to make changes and making this code a better version of it:\n")
+
+with open('fback.txt', 'a') as f:
+    f.write(fback + '\n'
+            )
